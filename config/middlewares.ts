@@ -28,6 +28,15 @@ export default [
     },
   },
   "strapi::cors",
+{
+  name: "strapi::cors",
+  config: {
+    enabled: true,
+    origin: ["*"], // Use "*" to allow all or specify domains e.g., ["http://localhost:3000"]
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    headers: ["Content-Type", "Authorization"],
+  },
+},
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
